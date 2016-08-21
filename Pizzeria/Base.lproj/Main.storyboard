@@ -82,6 +82,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHG-uJ-frr">
                                 <rect key="frame" x="268" y="285" width="64" height="30"/>
                                 <state key="normal" title="Siguiente"/>
+                                <connections>
+                                    <segue destination="PJ0-bP-5ga" kind="show" id="1HJ-kR-TkE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -100,6 +103,235 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mIU-nf-r2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1947" y="353"/>
+        </scene>
+        <!--Tipo de queso-->
+        <scene sceneID="tId-GG-nTv">
+            <objects>
+                <viewController title="Tipo de queso" id="PJ0-bP-5ga" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZSo-Dc-kBa"/>
+                        <viewControllerLayoutGuide type="bottom" id="8C7-VH-w03"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vy5-iK-Ndx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWj-cF-YB6">
+                                <rect key="frame" x="268" y="72" width="66" height="30"/>
+                                <state key="normal" title="Mozarella"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aJ-Lh-Cnh">
+                                <rect key="frame" x="271" y="110" width="59" height="30"/>
+                                <state key="normal" title="Cheddar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fO7-W8-aP6">
+                                <rect key="frame" x="262" y="148" width="77" height="30"/>
+                                <state key="normal" title="Parmesano"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h28-6J-Zrw">
+                                <rect key="frame" x="266" y="186" width="68" height="30"/>
+                                <state key="normal" title="Sin queso"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="au8-W9-tG3">
+                                <rect key="frame" x="268" y="285" width="64" height="30"/>
+                                <state key="normal" title="Siguiente"/>
+                                <connections>
+                                    <segue destination="Np2-I2-NmW" kind="show" id="VAN-iV-vwG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="au8-W9-tG3" firstAttribute="centerY" secondItem="Vy5-iK-Ndx" secondAttribute="centerY" id="2lK-A6-WPy"/>
+                            <constraint firstItem="bWj-cF-YB6" firstAttribute="top" secondItem="ZSo-Dc-kBa" secondAttribute="bottom" constant="8" symbolic="YES" id="2tv-3B-xh0"/>
+                            <constraint firstItem="1aJ-Lh-Cnh" firstAttribute="centerX" secondItem="Vy5-iK-Ndx" secondAttribute="centerX" id="3xs-6S-EJS"/>
+                            <constraint firstItem="fO7-W8-aP6" firstAttribute="top" secondItem="1aJ-Lh-Cnh" secondAttribute="bottom" constant="8" symbolic="YES" id="AqZ-5h-Ay4"/>
+                            <constraint firstItem="1aJ-Lh-Cnh" firstAttribute="top" secondItem="bWj-cF-YB6" secondAttribute="bottom" constant="8" symbolic="YES" id="QCa-Gi-ls8"/>
+                            <constraint firstItem="au8-W9-tG3" firstAttribute="centerX" secondItem="Vy5-iK-Ndx" secondAttribute="centerX" id="VYH-yx-mpe"/>
+                            <constraint firstItem="fO7-W8-aP6" firstAttribute="centerX" secondItem="Vy5-iK-Ndx" secondAttribute="centerX" id="k74-Xm-rtH"/>
+                            <constraint firstItem="h28-6J-Zrw" firstAttribute="top" secondItem="fO7-W8-aP6" secondAttribute="bottom" constant="8" symbolic="YES" id="pSE-1d-y7s"/>
+                            <constraint firstItem="bWj-cF-YB6" firstAttribute="centerX" secondItem="Vy5-iK-Ndx" secondAttribute="centerX" id="xPv-3c-Usf"/>
+                            <constraint firstItem="h28-6J-Zrw" firstAttribute="centerX" secondItem="Vy5-iK-Ndx" secondAttribute="centerX" id="yzV-xv-euv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDL-f0-Acn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2635" y="353"/>
+        </scene>
+        <!--Ingredientes-->
+        <scene sceneID="cYV-Wf-W0g">
+            <objects>
+                <viewController title="Ingredientes" id="Np2-I2-NmW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mfx-l3-oAX"/>
+                        <viewControllerLayoutGuide type="bottom" id="krb-Kw-8W8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lq3-C1-tA3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHU-z6-EGk">
+                                <rect key="frame" x="20" y="72" width="46" height="30"/>
+                                <state key="normal" title="Jamón"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9s-jm-Je3">
+                                <rect key="frame" x="20" y="110" width="70" height="30"/>
+                                <state key="normal" title="Pepperoni"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzz-dj-ojJ">
+                                <rect key="frame" x="20" y="148" width="33" height="30"/>
+                                <state key="normal" title="Pavo"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjm-AM-cIH">
+                                <rect key="frame" x="20" y="186" width="67" height="30"/>
+                                <state key="normal" title="Salchicha"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUa-Tw-7zP">
+                                <rect key="frame" x="20" y="224" width="60" height="30"/>
+                                <state key="normal" title="Aceituna"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDL-7m-gc3">
+                                <rect key="frame" x="130" y="186" width="52" height="30"/>
+                                <state key="normal" title="Anchoa"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qb-fQ-DUe">
+                                <rect key="frame" x="130" y="110" width="62" height="30"/>
+                                <state key="normal" title="Pimiento"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfJ-xU-MpO">
+                                <rect key="frame" x="130" y="72" width="52" height="30"/>
+                                <state key="normal" title="Cebolla"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASV-eK-CYe">
+                                <rect key="frame" x="130" y="224" width="79" height="30"/>
+                                <state key="normal" title="Champiñón"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAC-Eb-u9E">
+                                <rect key="frame" x="130" y="148" width="30" height="30"/>
+                                <state key="normal" title="Piña"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8Z-YK-ksP">
+                                <rect key="frame" x="75" y="285" width="64" height="30"/>
+                                <state key="normal" title="Siguiente"/>
+                                <connections>
+                                    <segue destination="4Cd-V8-8et" kind="show" id="G2i-oj-PkU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0f-Z1-Geg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3363" y="353"/>
+        </scene>
+        <!--Confirmación-->
+        <scene sceneID="4Gf-sX-9HC">
+            <objects>
+                <viewController title="Confirmación" id="4Cd-V8-8et" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Huo-Hv-u6S"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cms-sa-etM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pni-Ts-GPi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tamaño" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsk-Zs-gya">
+                                <rect key="frame" x="20" y="72" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvU-0k-dP4">
+                                <rect key="frame" x="80" y="101" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipo de masa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsK-pb-dLX">
+                                <rect key="frame" x="20" y="130" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmE-td-5I4">
+                                <rect key="frame" x="80" y="159" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipo de queso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qK5-zB-bNk">
+                                <rect key="frame" x="20" y="188" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25D-kW-GJM">
+                                <rect key="frame" x="80" y="217" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredientes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KE-H0-ILM">
+                                <rect key="frame" x="20" y="246" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaN-gb-NmU">
+                                <rect key="frame" x="80" y="275" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1e-Ka-Gfb">
+                                <rect key="frame" x="20" y="343" width="69" height="30"/>
+                                <state key="normal" title="Confirmar"/>
+                                <connections>
+                                    <segue destination="6iH-MV-IVX" kind="popoverPresentation" popoverAnchorView="N1e-Ka-Gfb" id="QaZ-xE-0zE">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g6J-L9-Mkt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4059" y="353"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5Vu-v2-K3J">
+            <objects>
+                <viewController id="6iH-MV-IVX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g2v-kQ-liO"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Pk-po-GSw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dJ0-Wn-LyU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orden enviada a la cocina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8m-Uo-rPB">
+                                <rect key="frame" x="202" y="289" width="197" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U8m-Uo-rPB" firstAttribute="centerY" secondItem="dJ0-Wn-LyU" secondAttribute="centerY" id="TYj-sq-iZk"/>
+                            <constraint firstItem="U8m-Uo-rPB" firstAttribute="centerX" secondItem="dJ0-Wn-LyU" secondAttribute="centerX" id="xFe-Jd-mCi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OX1-mT-AiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4736" y="353"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PcE-Or-p4R">
