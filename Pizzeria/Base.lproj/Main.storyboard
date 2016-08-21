@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="1252" y="353"/>
         </scene>
-        <!--View Controller-->
+        <!--Tipo de masa-->
         <scene sceneID="S6Y-4W-oFY">
             <objects>
-                <viewController id="Bf5-x9-961" sceneMemberID="viewController">
+                <viewController title="Tipo de masa" id="Bf5-x9-961" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hN6-9k-cC8"/>
                         <viewControllerLayoutGuide type="bottom" id="WPb-D8-ffP"/>
