@@ -18,6 +18,19 @@ class MyEnums {
         init?() {
             self = .NoSeleccionado
         }
+        
+        func ToString() -> String {
+            switch self {
+            case .Chica:
+                return "Chica"
+            case .Grande:
+                return "Grande"
+            case .Mediana:
+                return "Mediana"
+            case .NoSeleccionado:
+                return ""
+            }
+        }
     }
     
     enum TiposMasa {
@@ -29,6 +42,19 @@ class MyEnums {
         init?() {
             self = .NoSeleccionada
         }
+        
+        func ToString() -> String {
+            switch self {
+            case .Crujiente:
+                return "Crujiente"
+            case .Delgada:
+                return "Delgada"
+            case .Gruesa:
+                return "Gruesa"
+            case .NoSeleccionada:
+                return ""
+            }
+        }
     }
     
     enum  TiposQueso {
@@ -37,8 +63,26 @@ class MyEnums {
         case Cheddar
         case Parmesano
         case SinQueso
+
+        init?() {
+            self = .NoSeleccionado
+        }
+        
+        func ToString() -> String {
+            switch self {
+            case .Cheddar:
+                return "Cheddar"
+            case .Mozarella:
+                return "Mozarella"
+            case .NoSeleccionado:
+                return ""
+            case .Parmesano:
+                return "Parmesano"
+            case .SinQueso:
+                return "Sin queso"
+            }
+        }
     }
-    
     // Utiliza un patrón singleton para usar una instancia única para todas las vistas
     static let instancia = MyEnums()
     

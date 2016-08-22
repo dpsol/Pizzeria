@@ -21,93 +21,107 @@ class VistaIngredientes: UIViewController {
     @IBOutlet weak var btnAnchoa: UIButton!
     @IBOutlet weak var btnChampiñon: UIButton!
     
+    // Variable para saber si debe cambiar el valor de selección
+    var cambiaSeleccion: Bool = true
+    
     // Instancia de clase
     var selecciones = MyEnums.instancia
     
     // Acciones de botones
     @IBAction func btnJamon_Click(sender: UIButton) {
         if (selecciones.selIngredientes["Jamon"] != nil) {
-            let valor = selecciones.selIngredientes["Jamon"]!
-            selecciones.selIngredientes["Jamon"] = !valor
-            PoneFondo(sender, valor: !valor)
+            var valor = selecciones.selIngredientes["Jamon"]!
+            if cambiaSeleccion { valor = !valor }
+            selecciones.selIngredientes["Jamon"] = valor
+            PoneFondo(sender, valor: valor)
         }
     }
     
     @IBAction func btnPepperoni_Click(sender: UIButton) {
         if (selecciones.selIngredientes["Pepperoni"] != nil) {
-            let valor = selecciones.selIngredientes["Pepperoni"]!
-            selecciones.selIngredientes["Pepperoni"] = !valor
-            PoneFondo(sender, valor: !valor)
+            var valor = selecciones.selIngredientes["Pepperoni"]!
+            if cambiaSeleccion { valor = !valor }
+            selecciones.selIngredientes["Pepperoni"] = valor
+            PoneFondo(sender, valor: valor)
         }
     }
     
     @IBAction func btnPavo_Click(sender: UIButton) {
         if (selecciones.selIngredientes["Pavo"] != nil) {
-            let valor = selecciones.selIngredientes["Pavo"]!
-            selecciones.selIngredientes["Pavo"] = !valor
-            PoneFondo(sender, valor: !valor)
+            var valor = selecciones.selIngredientes["Pavo"]!
+            if cambiaSeleccion { valor = !valor }
+            selecciones.selIngredientes["Pavo"] = valor
+            PoneFondo(sender, valor: valor)
         }
     }
     
     @IBAction func btnSalchicha_Click(sender: UIButton) {
         if (selecciones.selIngredientes["Salchicha"] != nil) {
-            let valor = selecciones.selIngredientes["Salchicha"]!
-            selecciones.selIngredientes["Salchicha"] = !valor
-            PoneFondo(sender, valor: !valor)
+            var valor = selecciones.selIngredientes["Salchicha"]!
+            if cambiaSeleccion { valor = !valor }
+            selecciones.selIngredientes["Salchicha"] = valor
+            PoneFondo(sender, valor: valor)
         }
     }
     
     @IBAction func btnAceituna_Click(sender: UIButton) {
         if (selecciones.selIngredientes["Aceituna"] != nil) {
-            let valor = selecciones.selIngredientes["Aceituna"]!
-            selecciones.selIngredientes["Aceituna"] = !valor
-            PoneFondo(sender, valor: !valor)
+            var valor = selecciones.selIngredientes["Aceituna"]!
+            if cambiaSeleccion { valor = !valor }
+            selecciones.selIngredientes["Aceituna"] = valor
+            PoneFondo(sender, valor: valor)
         }
     }
     
     @IBAction func btnCebolla_Click(sender: UIButton) {
         if (selecciones.selIngredientes["Cebolla"] != nil) {
-            let valor = selecciones.selIngredientes["Cebolla"]!
-            selecciones.selIngredientes["Cebolla"] = !valor
-            PoneFondo(sender, valor: !valor)
+            var valor = selecciones.selIngredientes["Cebolla"]!
+            if cambiaSeleccion { valor = !valor }
+            selecciones.selIngredientes["Cebolla"] = valor
+            PoneFondo(sender, valor: valor)
         }
     }
     
     @IBAction func btnPimiento_Click(sender: UIButton) {
         if (selecciones.selIngredientes["Pimiento"] != nil) {
-            let valor = selecciones.selIngredientes["Pimiento"]!
-            selecciones.selIngredientes["Pimiento"] = !valor
-            PoneFondo(sender, valor: !valor)
+            var valor = selecciones.selIngredientes["Pimiento"]!
+            if cambiaSeleccion { valor = !valor }
+            selecciones.selIngredientes["Pimiento"] = valor
+            PoneFondo(sender, valor: valor)
         }
     }
     
     @IBAction func btnPiña_Click(sender: UIButton) {
         if (selecciones.selIngredientes["Piña"] != nil) {
-            let valor = selecciones.selIngredientes["Piña"]!
-            selecciones.selIngredientes["Piña"] = !valor
-            PoneFondo(sender, valor: !valor)
+            var valor = selecciones.selIngredientes["Piña"]!
+            if cambiaSeleccion { valor = !valor }
+            selecciones.selIngredientes["Piña"] = valor
+            PoneFondo(sender, valor: valor)
         }
     }
     
     @IBAction func btnAnchoa_Click(sender: UIButton) {
         if (selecciones.selIngredientes["Anchoa"] != nil) {
-            let valor = selecciones.selIngredientes["Anchoa"]!
-            selecciones.selIngredientes["Anchoa"] = !valor
-            PoneFondo(sender, valor: !valor)
+            var valor = selecciones.selIngredientes["Anchoa"]!
+            if cambiaSeleccion { valor = !valor }
+            selecciones.selIngredientes["Anchoa"] = valor
+            PoneFondo(sender, valor: valor)
         }
     }
     
     @IBAction func btnChampiñon_Click(sender: UIButton) {
         if (selecciones.selIngredientes["Champiñon"] != nil) {
-            let valor = selecciones.selIngredientes["Champiñon"]!
-            selecciones.selIngredientes["Champiñon"] = !valor
-            PoneFondo(sender, valor: !valor)
+            var valor = selecciones.selIngredientes["Champiñon"]!
+            if cambiaSeleccion { valor = !valor }
+            selecciones.selIngredientes["Champiñon"] = valor
+            PoneFondo(sender, valor: valor)
         }
     }
     // Evento de Vista
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        cambiaSeleccion = false
         btnPavo_Click(btnPavo)
         btnPiña_Click(btnPiña)
         btnJamon_Click(btnJamon)
@@ -118,15 +132,16 @@ class VistaIngredientes: UIViewController {
         btnChampiñon_Click(btnChampiñon)
         btnPepperoni_Click(btnPepperoni)
         btnSalchicha_Click(btnSalchicha)
+        cambiaSeleccion = true
     }
     
     // Método privado para poner el background del botón
     func PoneFondo(sender: UIButton, valor: Bool) {
         if valor {
-            sender.backgroundColor = UIColor.clearColor()
+            sender.backgroundColor = UIColor.lightGrayColor()
         }
         else {
-            sender.backgroundColor = UIColor.lightGrayColor()
+            sender.backgroundColor = UIColor.clearColor()
         }
     }
 }

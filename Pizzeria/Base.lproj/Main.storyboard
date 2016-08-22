@@ -318,7 +318,7 @@
         <!--Orden enviada-->
         <scene sceneID="m3I-jP-5rF">
             <objects>
-                <viewController title="Orden enviada" id="Dp8-86-6a7" sceneMemberID="viewController">
+                <viewController title="Orden enviada" id="Dp8-86-6a7" customClass="VistaFin" customModule="Pizzeria" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P3H-w3-jPD"/>
                         <viewControllerLayoutGuide type="bottom" id="MxT-AV-FWM"/>
@@ -349,6 +349,10 @@
                             <constraint firstItem="w8R-DG-dBy" firstAttribute="top" secondItem="P3H-w3-jPD" secondAttribute="bottom" constant="58" id="zzh-N9-gi2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnVolver" destination="8za-ZL-5Rr" id="ZuB-mk-F4f"/>
+                        <outlet property="lblResultado" destination="w8R-DG-dBy" id="wQo-5e-jC2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6Y-xs-9R8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -357,7 +361,7 @@
         <!--Confirmación-->
         <scene sceneID="4Gf-sX-9HC">
             <objects>
-                <viewController title="Confirmación" id="4Cd-V8-8et" sceneMemberID="viewController">
+                <viewController title="Confirmación" id="4Cd-V8-8et" customClass="VistaConfirmacion" customModule="Pizzeria" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Huo-Hv-u6S"/>
                         <viewControllerLayoutGuide type="bottom" id="Cms-sa-etM"/>
@@ -373,7 +377,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvU-0k-dP4">
-                                <rect key="frame" x="80" y="101" width="42" height="21"/>
+                                <rect key="frame" x="80" y="101" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -385,7 +389,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmE-td-5I4">
-                                <rect key="frame" x="80" y="159" width="42" height="21"/>
+                                <rect key="frame" x="80" y="159" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -397,7 +401,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25D-kW-GJM">
-                                <rect key="frame" x="80" y="217" width="42" height="21"/>
+                                <rect key="frame" x="80" y="217" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -408,8 +412,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaN-gb-NmU">
-                                <rect key="frame" x="80" y="275" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaN-gb-NmU">
+                                <rect key="frame" x="80" y="275" width="300" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -424,6 +428,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="lblIngredientes" destination="CaN-gb-NmU" id="MFo-EH-UCH"/>
+                        <outlet property="lblTamaño" destination="fvU-0k-dP4" id="q05-mR-GLD"/>
+                        <outlet property="lblTipoMasa" destination="gmE-td-5I4" id="Di2-T2-ns3"/>
+                        <outlet property="lblTipoQueso" destination="25D-kW-GJM" id="f4F-bZ-0gR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6J-L9-Mkt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
