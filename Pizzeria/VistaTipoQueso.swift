@@ -20,7 +20,7 @@ class VistaTipoQueso: UIViewController {
     
     // Acciones de botones
     @IBAction func btnMozarella_Click(sender: UIButton) {
-        sender.backgroundColor = UIColor.darkGrayColor()
+        sender.backgroundColor = UIColor.lightGrayColor()
         btnCheddar.backgroundColor = UIColor.clearColor()
         btnParmesano.backgroundColor = UIColor.clearColor()
         btnSinQueso.backgroundColor = UIColor.clearColor()
@@ -28,7 +28,7 @@ class VistaTipoQueso: UIViewController {
     }
     
     @IBAction func btnCheddar_Click(sender: UIButton) {
-        sender.backgroundColor = UIColor.darkGrayColor()
+        sender.backgroundColor = UIColor.lightGrayColor()
         btnMozarella.backgroundColor = UIColor.clearColor()
         btnParmesano.backgroundColor = UIColor.clearColor()
         btnSinQueso.backgroundColor = UIColor.clearColor()
@@ -36,7 +36,7 @@ class VistaTipoQueso: UIViewController {
     }
     
     @IBAction func btnParmesano_Click(sender: UIButton) {
-        sender.backgroundColor = UIColor.darkGrayColor()
+        sender.backgroundColor = UIColor.lightGrayColor()
         btnCheddar.backgroundColor = UIColor.clearColor()
         btnMozarella.backgroundColor = UIColor.clearColor()
         btnSinQueso.backgroundColor = UIColor.clearColor()
@@ -44,7 +44,7 @@ class VistaTipoQueso: UIViewController {
     }
     
     @IBAction func btnSinQueso_Click(sender: UIButton) {
-        sender.backgroundColor = UIColor.darkGrayColor()
+        sender.backgroundColor = UIColor.lightGrayColor()
         btnCheddar.backgroundColor = UIColor.clearColor()
         btnParmesano.backgroundColor = UIColor.clearColor()
         btnMozarella.backgroundColor = UIColor.clearColor()

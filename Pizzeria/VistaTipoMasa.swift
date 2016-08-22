@@ -20,21 +20,21 @@ class VistaTipoMasa: UIViewController {
     
     // Acciones de botones
     @IBAction func btnDelgada_Click(sender: UIButton) {
-        sender.backgroundColor = UIColor.darkGrayColor()
+        sender.backgroundColor = UIColor.lightGrayColor()
         btnCrujiente.backgroundColor = UIColor.clearColor()
         btnGruesa.backgroundColor = UIColor.clearColor()
         selecciones.selTipoMasa=MyEnums.TiposMasa.Delgada
     }
     
     @IBAction func btnCrujiente_Click(sender: UIButton) {
-        sender.backgroundColor = UIColor.darkGrayColor()
+        sender.backgroundColor = UIColor.lightGrayColor()
         btnDelgada.backgroundColor = UIColor.clearColor()
         btnGruesa.backgroundColor = UIColor.clearColor()
         selecciones.selTipoMasa=MyEnums.TiposMasa.Crujiente
     }
     
     @IBAction func btnGruesa_Click(sender: UIButton) {
-        sender.backgroundColor = UIColor.darkGrayColor()
+        sender.backgroundColor = UIColor.lightGrayColor()
         btnCrujiente.backgroundColor = UIColor.clearColor()
         btnDelgada.backgroundColor = UIColor.clearColor()
         selecciones.selTipoMasa=MyEnums.TiposMasa.Gruesa

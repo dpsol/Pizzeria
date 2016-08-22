@@ -46,5 +46,5 @@ class MyEnums {
     var selTamaño : Tamaños = .NoSeleccionado
     var selTipoMasa : TiposMasa = .NoSeleccionada
     var selTipoQueso : TiposQueso = .NoSeleccionado
-    var selIngredientes = [String]()
+    var selIngredientes: [String: Bool] = ["Jamon": false, "Pepperoni": false, "Pavo": false, "Salchicha": false, "Aceituna": false, "Cebolla": false, "Pimiento": false, "Piña": false, "Anchoa": false, "Champiñon": false]
 }

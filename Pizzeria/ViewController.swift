@@ -29,21 +29,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnChica(sender: UIButton) {
-        sender.backgroundColor = UIColor.darkGrayColor()
+        sender.backgroundColor = UIColor.lightGrayColor()
         btnTamMediano.backgroundColor = UIColor.clearColor()
         btnTamrande.backgroundColor = UIColor.clearColor()
         selecciones.selTamaño=MyEnums.Tamaños.Chica
     }
 
     @IBAction func btnMediana(sender: UIButton) {
-        sender.backgroundColor = UIColor.darkGrayColor()
+        sender.backgroundColor = UIColor.lightGrayColor()
         btnTamChica.backgroundColor = UIColor.clearColor()
         btnTamrande.backgroundColor = UIColor.clearColor()
         selecciones.selTamaño = MyEnums.Tamaños.Mediana
     }
     
     @IBAction func btnGrande(sender: UIButton) {
-        sender.backgroundColor = UIColor.darkGrayColor()
+        sender.backgroundColor = UIColor.lightGrayColor()
         btnTamMediano.backgroundColor = UIColor.clearColor()
         btnTamChica.backgroundColor = UIColor.clearColor()
         selecciones.selTamaño=MyEnums.Tamaños.Grande

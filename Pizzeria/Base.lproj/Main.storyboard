@@ -209,7 +209,7 @@
         <!--Ingredientes-->
         <scene sceneID="cYV-Wf-W0g">
             <objects>
-                <viewController title="Ingredientes" id="Np2-I2-NmW" sceneMemberID="viewController">
+                <viewController title="Ingredientes" id="Np2-I2-NmW" customClass="VistaIngredientes" customModule="Pizzeria" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mfx-l3-oAX"/>
                         <viewControllerLayoutGuide type="bottom" id="krb-Kw-8W8"/>
@@ -221,42 +221,72 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHU-z6-EGk">
                                 <rect key="frame" x="20" y="72" width="46" height="30"/>
                                 <state key="normal" title="Jamón"/>
+                                <connections>
+                                    <action selector="btnJamon_Click:" destination="Np2-I2-NmW" eventType="touchUpInside" id="x8d-u3-CdR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9s-jm-Je3">
                                 <rect key="frame" x="20" y="110" width="70" height="30"/>
                                 <state key="normal" title="Pepperoni"/>
+                                <connections>
+                                    <action selector="btnPepperoni_Click:" destination="Np2-I2-NmW" eventType="touchUpInside" id="8Y7-Qv-dXo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzz-dj-ojJ">
                                 <rect key="frame" x="20" y="148" width="33" height="30"/>
                                 <state key="normal" title="Pavo"/>
+                                <connections>
+                                    <action selector="btnPavo_Click:" destination="Np2-I2-NmW" eventType="touchUpInside" id="iIa-5o-Mvr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjm-AM-cIH">
                                 <rect key="frame" x="20" y="186" width="67" height="30"/>
                                 <state key="normal" title="Salchicha"/>
+                                <connections>
+                                    <action selector="btnSalchicha_Click:" destination="Np2-I2-NmW" eventType="touchUpInside" id="Uyc-89-SXH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUa-Tw-7zP">
                                 <rect key="frame" x="20" y="224" width="60" height="30"/>
                                 <state key="normal" title="Aceituna"/>
+                                <connections>
+                                    <action selector="btnAceituna_Click:" destination="Np2-I2-NmW" eventType="touchUpInside" id="a6G-U8-VvH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDL-7m-gc3">
                                 <rect key="frame" x="130" y="186" width="52" height="30"/>
                                 <state key="normal" title="Anchoa"/>
+                                <connections>
+                                    <action selector="btnAnchoa_Click:" destination="Np2-I2-NmW" eventType="touchUpInside" id="8k0-JD-epO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qb-fQ-DUe">
                                 <rect key="frame" x="130" y="110" width="62" height="30"/>
                                 <state key="normal" title="Pimiento"/>
+                                <connections>
+                                    <action selector="btnPimiento_Click:" destination="Np2-I2-NmW" eventType="touchUpInside" id="1WN-lU-LhT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfJ-xU-MpO">
                                 <rect key="frame" x="130" y="72" width="52" height="30"/>
                                 <state key="normal" title="Cebolla"/>
+                                <connections>
+                                    <action selector="btnCebolla_Click:" destination="Np2-I2-NmW" eventType="touchUpInside" id="ZOJ-yy-gTZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASV-eK-CYe">
                                 <rect key="frame" x="130" y="224" width="79" height="30"/>
                                 <state key="normal" title="Champiñón"/>
+                                <connections>
+                                    <action selector="btnChampiñon_Click:" destination="Np2-I2-NmW" eventType="touchUpInside" id="30M-Lc-zLi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAC-Eb-u9E">
                                 <rect key="frame" x="130" y="148" width="30" height="30"/>
                                 <state key="normal" title="Piña"/>
+                                <connections>
+                                    <action selector="btnPiña_Click:" destination="Np2-I2-NmW" eventType="touchUpInside" id="bcT-VP-gf5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8Z-YK-ksP">
                                 <rect key="frame" x="75" y="285" width="64" height="30"/>
@@ -268,6 +298,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="btnAceituna" destination="DUa-Tw-7zP" id="v8H-1l-c3e"/>
+                        <outlet property="btnAnchoa" destination="pDL-7m-gc3" id="lis-Bi-NVg"/>
+                        <outlet property="btnCebolla" destination="xfJ-xU-MpO" id="r9g-1z-ZmM"/>
+                        <outlet property="btnChampiñon" destination="ASV-eK-CYe" id="znK-jL-itS"/>
+                        <outlet property="btnJamon" destination="nHU-z6-EGk" id="Cxf-xg-LQ8"/>
+                        <outlet property="btnPavo" destination="Kzz-dj-ojJ" id="TMG-gA-Syo"/>
+                        <outlet property="btnPepperoni" destination="J9s-jm-Je3" id="vYF-hn-3VB"/>
+                        <outlet property="btnPimiento" destination="5qb-fQ-DUe" id="Jtg-Zf-qCs"/>
+                        <outlet property="btnPiña" destination="iAC-Eb-u9E" id="QIq-bm-b6L"/>
+                        <outlet property="btnSalchicha" destination="mjm-AM-cIH" id="uxG-sI-wld"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0f-Z1-Geg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

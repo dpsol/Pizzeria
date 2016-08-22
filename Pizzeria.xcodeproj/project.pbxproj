@@ -15,6 +15,8 @@
 		657A46DF1D6A628B000E8AAD /* VistaTipoMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A46DE1D6A628B000E8AAD /* VistaTipoMasa.swift */; };
 		657A46E11D6A7880000E8AAD /* MyEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A46E01D6A7880000E8AAD /* MyEnums.swift */; };
 		657A46E31D6A937A000E8AAD /* VistaTipoQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A46E21D6A937A000E8AAD /* VistaTipoQueso.swift */; };
+		657A46E51D6A9988000E8AAD /* VistaIngredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A46E41D6A9988000E8AAD /* VistaIngredientes.swift */; };
+		657A46E71D6AACF9000E8AAD /* VistaConfirmacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A46E61D6AACF9000E8AAD /* VistaConfirmacion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		657A46DE1D6A628B000E8AAD /* VistaTipoMasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaTipoMasa.swift; sourceTree = "<group>"; };
 		657A46E01D6A7880000E8AAD /* MyEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEnums.swift; sourceTree = "<group>"; };
 		657A46E21D6A937A000E8AAD /* VistaTipoQueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaTipoQueso.swift; sourceTree = "<group>"; };
+		657A46E41D6A9988000E8AAD /* VistaIngredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaIngredientes.swift; sourceTree = "<group>"; };
+		657A46E61D6AACF9000E8AAD /* VistaConfirmacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaConfirmacion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				657A46DE1D6A628B000E8AAD /* VistaTipoMasa.swift */,
 				657A46E01D6A7880000E8AAD /* MyEnums.swift */,
 				657A46E21D6A937A000E8AAD /* VistaTipoQueso.swift */,
+				657A46E41D6A9988000E8AAD /* VistaIngredientes.swift */,
+				657A46E61D6AACF9000E8AAD /* VistaConfirmacion.swift */,
 			);
 			path = Pizzeria;
 			sourceTree = "<group>";
@@ -145,7 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				657A46DF1D6A628B000E8AAD /* VistaTipoMasa.swift in Sources */,
+				657A46E71D6AACF9000E8AAD /* VistaConfirmacion.swift in Sources */,
 				657A46E31D6A937A000E8AAD /* VistaTipoQueso.swift in Sources */,
+				657A46E51D6A9988000E8AAD /* VistaIngredientes.swift in Sources */,
 				657A46CF1D6A3EB2000E8AAD /* ViewController.swift in Sources */,
 				657A46E11D6A7880000E8AAD /* MyEnums.swift in Sources */,
 				657A46CD1D6A3EB2000E8AAD /* AppDelegate.swift in Sources */,
