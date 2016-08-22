@@ -17,20 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Skf-lP-kxa">
-                                <rect key="frame" x="281" y="72" width="39" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Skf-lP-kxa">
+                                <rect key="frame" x="281" y="93" width="39" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Chica"/>
+                                <connections>
+                                    <action selector="btnChica:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JuY-N2-TYc"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAu-T4-NOV">
-                                <rect key="frame" x="271" y="110" width="59" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAu-T4-NOV">
+                                <rect key="frame" x="271" y="131" width="59" height="30"/>
                                 <state key="normal" title="Mediana"/>
+                                <connections>
+                                    <action selector="btnMediana:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6y7-pe-613"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFU-WL-vlZ">
-                                <rect key="frame" x="275" y="148" width="51" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFU-WL-vlZ">
+                                <rect key="frame" x="275" y="169" width="51" height="30"/>
                                 <state key="normal" title="Grande"/>
+                                <connections>
+                                    <action selector="btnGrande:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CgG-pi-NCk"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmC-Bd-lOB">
-                                <rect key="frame" x="268" y="308" width="64" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmC-Bd-lOB">
+                                <rect key="frame" x="268" y="285" width="64" height="30"/>
                                 <state key="normal" title="Siguiente"/>
                                 <connections>
                                     <segue destination="Bf5-x9-961" kind="show" id="aFa-0m-fbe"/>
@@ -50,6 +60,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9zb-6Q-wqZ"/>
+                    <connections>
+                        <outlet property="btnTamChica" destination="Skf-lP-kxa" id="0tA-Ix-7a9"/>
+                        <outlet property="btnTamMediano" destination="DAu-T4-NOV" id="6nB-v5-FxD"/>
+                        <outlet property="btnTamrande" destination="EFU-WL-vlZ" id="N6X-nQ-if2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,7 +73,7 @@
         <!--Tipo de masa-->
         <scene sceneID="S6Y-4W-oFY">
             <objects>
-                <viewController title="Tipo de masa" id="Bf5-x9-961" sceneMemberID="viewController">
+                <viewController title="Tipo de masa" id="Bf5-x9-961" customClass="VistaTipoMasa" customModule="Pizzeria" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hN6-9k-cC8"/>
                         <viewControllerLayoutGuide type="bottom" id="WPb-D8-ffP"/>
@@ -70,14 +85,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DD-GQ-BeR">
                                 <rect key="frame" x="272" y="72" width="57" height="30"/>
                                 <state key="normal" title="Delgada"/>
+                                <connections>
+                                    <action selector="btnDelgada_Click:" destination="Bf5-x9-961" eventType="touchUpInside" id="l36-74-eVy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNx-Ha-1vO">
                                 <rect key="frame" x="269" y="110" width="62" height="30"/>
                                 <state key="normal" title="Crujiente"/>
+                                <connections>
+                                    <action selector="btnCrujiente_Click:" destination="Bf5-x9-961" eventType="touchUpInside" id="Sl5-ef-fxW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmJ-db-EQW">
                                 <rect key="frame" x="276" y="148" width="49" height="30"/>
                                 <state key="normal" title="Gruesa"/>
+                                <connections>
+                                    <action selector="btnGruesa_Click:" destination="Bf5-x9-961" eventType="touchUpInside" id="Pws-HG-f0j"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHG-uJ-frr">
                                 <rect key="frame" x="268" y="285" width="64" height="30"/>
@@ -89,16 +113,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="8DD-GQ-BeR" firstAttribute="centerX" secondItem="3FP-OM-I1T" secondAttribute="centerX" id="0FH-Zg-wme"/>
-                            <constraint firstItem="fNx-Ha-1vO" firstAttribute="centerX" secondItem="3FP-OM-I1T" secondAttribute="centerX" id="1FV-mv-fQH"/>
-                            <constraint firstItem="fNx-Ha-1vO" firstAttribute="top" secondItem="8DD-GQ-BeR" secondAttribute="bottom" constant="8" symbolic="YES" id="SvM-WR-4Ev"/>
-                            <constraint firstItem="GmJ-db-EQW" firstAttribute="centerX" secondItem="3FP-OM-I1T" secondAttribute="centerX" id="gx9-wx-ici"/>
-                            <constraint firstItem="GmJ-db-EQW" firstAttribute="top" secondItem="fNx-Ha-1vO" secondAttribute="bottom" constant="8" symbolic="YES" id="nFj-h7-KQm"/>
-                            <constraint firstItem="8DD-GQ-BeR" firstAttribute="top" secondItem="hN6-9k-cC8" secondAttribute="bottom" constant="8" symbolic="YES" id="tKH-11-nBu"/>
-                            <constraint firstItem="jHG-uJ-frr" firstAttribute="centerX" secondItem="3FP-OM-I1T" secondAttribute="centerX" id="tiP-is-HKe"/>
-                            <constraint firstItem="jHG-uJ-frr" firstAttribute="centerY" secondItem="3FP-OM-I1T" secondAttribute="centerY" id="u0z-7L-qEW"/>
+                            <constraint firstItem="GmJ-db-EQW" firstAttribute="centerX" secondItem="jHG-uJ-frr" secondAttribute="centerX" id="2Wg-id-yd8"/>
+                            <constraint firstItem="GmJ-db-EQW" firstAttribute="top" secondItem="fNx-Ha-1vO" secondAttribute="bottom" constant="8" symbolic="YES" id="7nI-9y-8zm"/>
+                            <constraint firstItem="8DD-GQ-BeR" firstAttribute="top" secondItem="hN6-9k-cC8" secondAttribute="bottom" constant="8" symbolic="YES" id="M2c-l3-jKY"/>
+                            <constraint firstItem="fNx-Ha-1vO" firstAttribute="top" secondItem="8DD-GQ-BeR" secondAttribute="bottom" constant="8" symbolic="YES" id="SdQ-Lh-eh5"/>
+                            <constraint firstItem="jHG-uJ-frr" firstAttribute="centerY" secondItem="3FP-OM-I1T" secondAttribute="centerY" id="bty-XV-sPg"/>
+                            <constraint firstItem="fNx-Ha-1vO" firstAttribute="centerX" secondItem="GmJ-db-EQW" secondAttribute="centerX" id="c68-sb-9dt"/>
+                            <constraint firstItem="8DD-GQ-BeR" firstAttribute="centerX" secondItem="3FP-OM-I1T" secondAttribute="centerX" id="gFL-D5-shK"/>
+                            <constraint firstItem="8DD-GQ-BeR" firstAttribute="centerX" secondItem="fNx-Ha-1vO" secondAttribute="centerX" id="zGr-tT-apk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnCrujiente" destination="fNx-Ha-1vO" id="Zz8-Nz-kcg"/>
+                        <outlet property="btnDelgada" destination="8DD-GQ-BeR" id="LHP-Df-WyF"/>
+                        <outlet property="btnGruesa" destination="GmJ-db-EQW" id="Bvh-3R-UeI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mIU-nf-r2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,7 +136,7 @@
         <!--Tipo de queso-->
         <scene sceneID="tId-GG-nTv">
             <objects>
-                <viewController title="Tipo de queso" id="PJ0-bP-5ga" sceneMemberID="viewController">
+                <viewController title="Tipo de queso" id="PJ0-bP-5ga" customClass="VistaTipoQueso" customModule="Pizzeria" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZSo-Dc-kBa"/>
                         <viewControllerLayoutGuide type="bottom" id="8C7-VH-w03"/>
@@ -116,21 +145,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWj-cF-YB6">
-                                <rect key="frame" x="268" y="72" width="66" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWj-cF-YB6">
+                                <rect key="frame" x="267" y="72" width="66" height="30"/>
                                 <state key="normal" title="Mozarella"/>
+                                <connections>
+                                    <action selector="btnMozarella_Click:" destination="PJ0-bP-5ga" eventType="touchUpInside" id="Jid-QL-xnL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aJ-Lh-Cnh">
                                 <rect key="frame" x="271" y="110" width="59" height="30"/>
                                 <state key="normal" title="Cheddar"/>
+                                <connections>
+                                    <action selector="btnCheddar_Click:" destination="PJ0-bP-5ga" eventType="touchUpInside" id="G0a-Yh-38i"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fO7-W8-aP6">
                                 <rect key="frame" x="262" y="148" width="77" height="30"/>
                                 <state key="normal" title="Parmesano"/>
+                                <connections>
+                                    <action selector="btnParmesano_Click:" destination="PJ0-bP-5ga" eventType="touchUpInside" id="pFd-oX-A97"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h28-6J-Zrw">
                                 <rect key="frame" x="266" y="186" width="68" height="30"/>
                                 <state key="normal" title="Sin queso"/>
+                                <connections>
+                                    <action selector="btnSinQueso_Click:" destination="PJ0-bP-5ga" eventType="touchUpInside" id="gFv-7y-wHk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="au8-W9-tG3">
                                 <rect key="frame" x="268" y="285" width="64" height="30"/>
@@ -154,6 +195,12 @@
                             <constraint firstItem="h28-6J-Zrw" firstAttribute="centerX" secondItem="Vy5-iK-Ndx" secondAttribute="centerX" id="yzV-xv-euv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnCheddar" destination="1aJ-Lh-Cnh" id="i9I-bc-p6E"/>
+                        <outlet property="btnMozarella" destination="bWj-cF-YB6" id="UfP-hy-pvC"/>
+                        <outlet property="btnParmesano" destination="fO7-W8-aP6" id="cyD-mh-Zf7"/>
+                        <outlet property="btnSinQueso" destination="h28-6J-Zrw" id="HDB-AJ-oIZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MDL-f0-Acn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -226,6 +273,45 @@
             </objects>
             <point key="canvasLocation" x="1947" y="1145"/>
         </scene>
+        <!--Orden enviada-->
+        <scene sceneID="m3I-jP-5rF">
+            <objects>
+                <viewController title="Orden enviada" id="Dp8-86-6a7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P3H-w3-jPD"/>
+                        <viewControllerLayoutGuide type="bottom" id="MxT-AV-FWM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nmc-mG-4uM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orden enviada a la cocina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8R-DG-dBy">
+                                <rect key="frame" x="202" y="122" width="197" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8za-ZL-5Rr">
+                                <rect key="frame" x="251" y="285" width="98" height="30"/>
+                                <state key="normal" title="Volver al inicio"/>
+                                <connections>
+                                    <segue destination="r6V-h5-q8z" kind="show" id="Eos-lS-ASC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8za-ZL-5Rr" firstAttribute="centerX" secondItem="Nmc-mG-4uM" secondAttribute="centerX" id="8se-cX-Lzu"/>
+                            <constraint firstItem="w8R-DG-dBy" firstAttribute="centerX" secondItem="Nmc-mG-4uM" secondAttribute="centerX" id="PZR-be-4zp"/>
+                            <constraint firstItem="8za-ZL-5Rr" firstAttribute="centerY" secondItem="Nmc-mG-4uM" secondAttribute="centerY" id="hfx-zg-ucf"/>
+                            <constraint firstItem="w8R-DG-dBy" firstAttribute="top" secondItem="P3H-w3-jPD" secondAttribute="bottom" constant="58" id="zzh-N9-gi2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y6Y-xs-9R8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1266" y="1913"/>
+        </scene>
         <!--Confirmación-->
         <scene sceneID="4Gf-sX-9HC">
             <objects>
@@ -290,9 +376,7 @@
                                 <rect key="frame" x="20" y="343" width="69" height="30"/>
                                 <state key="normal" title="Confirmar"/>
                                 <connections>
-                                    <segue destination="6iH-MV-IVX" kind="popoverPresentation" popoverAnchorView="N1e-Ka-Gfb" id="QaZ-xE-0zE">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="Dp8-86-6a7" kind="show" id="gEF-UO-DX3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -302,46 +386,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6J-L9-Mkt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1947" y="1913"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="5Vu-v2-K3J">
-            <objects>
-                <viewController id="6iH-MV-IVX" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="g2v-kQ-liO"/>
-                        <viewControllerLayoutGuide type="bottom" id="7Pk-po-GSw"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dJ0-Wn-LyU">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orden enviada a la cocina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8m-Uo-rPB">
-                                <rect key="frame" x="202" y="98" width="197" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjB-fR-bbj">
-                                <rect key="frame" x="251" y="285" width="98" height="30"/>
-                                <state key="normal" title="Volver al inicio"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="76Z-cq-4H0"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="hjB-fR-bbj" firstAttribute="centerX" secondItem="dJ0-Wn-LyU" secondAttribute="centerX" id="Ejf-Jc-L5T"/>
-                            <constraint firstItem="hjB-fR-bbj" firstAttribute="centerY" secondItem="dJ0-Wn-LyU" secondAttribute="centerY" id="Jh9-oo-1db"/>
-                            <constraint firstItem="U8m-Uo-rPB" firstAttribute="centerY" secondItem="dJ0-Wn-LyU" secondAttribute="centerY" constant="-191.5" id="TYj-sq-iZk"/>
-                            <constraint firstItem="U8m-Uo-rPB" firstAttribute="centerX" secondItem="dJ0-Wn-LyU" secondAttribute="centerX" id="eg6-M7-ppO"/>
-                            <constraint firstItem="U8m-Uo-rPB" firstAttribute="centerX" secondItem="dJ0-Wn-LyU" secondAttribute="centerX" id="xFe-Jd-mCi"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OX1-mT-AiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1252" y="1913"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PcE-Or-p4R">
@@ -362,7 +406,4 @@
             <point key="canvasLocation" x="511" y="353"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="76Z-cq-4H0"/>
-    </inferredMetricsTieBreakers>
 </document>

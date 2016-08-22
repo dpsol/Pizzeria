@@ -12,6 +12,9 @@
 		657A46D21D6A3EB2000E8AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657A46D01D6A3EB2000E8AAD /* Main.storyboard */; };
 		657A46D41D6A3EB2000E8AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 657A46D31D6A3EB2000E8AAD /* Assets.xcassets */; };
 		657A46D71D6A3EB2000E8AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657A46D51D6A3EB2000E8AAD /* LaunchScreen.storyboard */; };
+		657A46DF1D6A628B000E8AAD /* VistaTipoMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A46DE1D6A628B000E8AAD /* VistaTipoMasa.swift */; };
+		657A46E11D6A7880000E8AAD /* MyEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A46E01D6A7880000E8AAD /* MyEnums.swift */; };
+		657A46E31D6A937A000E8AAD /* VistaTipoQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A46E21D6A937A000E8AAD /* VistaTipoQueso.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		657A46D31D6A3EB2000E8AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		657A46D61D6A3EB2000E8AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		657A46D81D6A3EB2000E8AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		657A46DE1D6A628B000E8AAD /* VistaTipoMasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaTipoMasa.swift; sourceTree = "<group>"; };
+		657A46E01D6A7880000E8AAD /* MyEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEnums.swift; sourceTree = "<group>"; };
+		657A46E21D6A937A000E8AAD /* VistaTipoQueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaTipoQueso.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				657A46D31D6A3EB2000E8AAD /* Assets.xcassets */,
 				657A46D51D6A3EB2000E8AAD /* LaunchScreen.storyboard */,
 				657A46D81D6A3EB2000E8AAD /* Info.plist */,
+				657A46DE1D6A628B000E8AAD /* VistaTipoMasa.swift */,
+				657A46E01D6A7880000E8AAD /* MyEnums.swift */,
+				657A46E21D6A937A000E8AAD /* VistaTipoQueso.swift */,
 			);
 			path = Pizzeria;
 			sourceTree = "<group>";
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				657A46DF1D6A628B000E8AAD /* VistaTipoMasa.swift in Sources */,
+				657A46E31D6A937A000E8AAD /* VistaTipoQueso.swift in Sources */,
 				657A46CF1D6A3EB2000E8AAD /* ViewController.swift in Sources */,
+				657A46E11D6A7880000E8AAD /* MyEnums.swift in Sources */,
 				657A46CD1D6A3EB2000E8AAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
